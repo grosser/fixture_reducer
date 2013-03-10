@@ -10,5 +10,6 @@ Gem::Specification.new name, FixtureReducer::VERSION do |s|
   s.files = `git ls-files`.split("\n")
   s.license = "MIT"
   s.signing_key = File.expand_path("~/.ssh/gem-private_key.pem")
-  s.cert_chain = [".public_cert.pem"]
+  s.cert_chain = ["gem-public_cert.pem"]
+  s.executables = ["fixture-reducer"]
 end
