@@ -5,4 +5,4 @@ require 'fixture_reducer'
 raise "pass me test files" if ARGV.empty?
 puts "running on #{ARGV.inspect}"
 
-ARGV.each { |file| FixtureReducer.new(file).reduce_fixtures! }
+ARGV.each { |file| FixtureReducer::FixtureReducer.new(file).reduce_fixtures! }
