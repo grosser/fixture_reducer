@@ -8,7 +8,5 @@ Gem::Specification.new name, FixtureReducer::VERSION do |s|
   s.homepage = "https://github.com/grosser/#{name}"
   s.files = `git ls-files lib bin`.split("\n")
   s.license = "MIT"
-  s.signing_key = File.expand_path("~/.ssh/gem-private-key-grosser.pem")
-  s.cert_chain = ["gem-public_cert.pem"]
   s.executables = ["fixture-reducer"]
 end
